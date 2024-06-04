@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Multiplayer Project - Unreal Engine 5</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="landing is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+				<header id="header" class="alt">
+					<h1><a href="index.html">COREY MEIR</a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="special">
+								<a href="#menu" class="menuToggle"><span>Menu</span></a>
+								<div id="menu">
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="AboutMe.html">ABOUT ME</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+				<!-- One -->
+					<section id="banner" >
+
+						<section class="spotlight">
+							<div class="image"><img src="images/MultiplayerProjectPoster.PNG" alt="" ></div>
+							<div class="content">
+									<h2>Multiplayer Project - Unreal Engine 5</h2>
+									<p>Here is a guide through my Multiplayer Project that I created in my final year of University in Unreal Engine 5. It is a project that encorporates a lot of networking considerations and implementations for functionality such as client-side prediction. </p>
+
+							</div>
+						</section>
+						<a href="#two" class="more scrolly">Learn More</a>
+
+</section>
+
+
+
+
+
+
+				<!-- Two -->
+
+				<section class="wrapper style5">
+				<div class="inner">
+
+					<center><h3>Game Trailer</h3>
+					<p>Below is the trailer that I created for this project. I took inspiration from other shooter game trailers, such as Call of Duty. </p>
+					<hr /></center>
+
+					<center><iframe width="720" height="480" src="https://www.youtube.com/embed/w-GzBOTUD2E?si=2AOMuP7byzH_RubV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>>
+</iframe> </center>
+
+				</div>
+			</section>
+
+
+			<section id="two" class="wrapper alt style2">
+				<div class="inner">
+
+						<h2>The Aim Of The Project</a></h2>
+							<p>The purpose of this project was to showcase the skills that I gained within my Multiplayer Games module. By looking at networking considerations for games, whilst looking at Engine specific implementations within Unreal Engine.
+								This knowledge learnt, tied with my previous Unreal Engine and Games Development skills, gave me a great finished project that encorporates a lot of features and functionality shown below. The game is a third-person shooter, targeted at PC using keyboard and mouse. It has team-based and free-for-all based gamemodes, with map/mode voting within the networked pre-game lobbies.
+								</p>
+
+				</div>
+
+				<section class="spotlight">
+				<iframe width="860" height="480" src="https://www.youtube.com/embed/zHDrWYw_a_k?si=l82eGGIXpwd4tw25" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div class="content">
+						<h2>Networked Lobby System</h2>
+						<p>The first thing that the player is presented with in a game is the menu, therefore, I spent a lot of time developing the menu system along with the lobby system.</p>
+						<p>Players can create and join locally networked lobbies, whilst also being able to set maximum player limits. When in the lobby, the systems that I created will randomly assign two different map/mode selections. These map/mode selections can be voted on by players, with the number of current votes being shown to all players.</p>
+						<p>The UI utilises client-side prediction, to allow high-ping clients to have a smooth experience. Where their UI will locally update, and will only be changed if the server determines that their version of the information being shown is incorrect.</p>
+						<p>Depending on how many players are allowed in the game will depend on what the minimum threshold is of joined players, as well as the map/modes that can be selected. For example, a lobby of 3 people will not have a team-based gamemode made available to select from.</p>
+					</div>
+				</section>
+
+				<section class="spotlight">
+					<img src="images/OlakBops/WebsiteCamos.png" alt="" width="900" height="500">	<div class="content">
+						<h2>Weapon Variety</h2>
+						<p>The game encorporates a variety of weapons, with differing areas of specialities. There are both projectile and hitscan weapons, which are utilised to allow the most appropriate system to be made for each weapon type.</p>
+						<p>Each weapon type has its own impact on a player such as movement speed, reload speed, and also weapon swapping speed. This is to create a more realistic sense to how a weapon would expect to be handled by a person. With pistols being quick to draw, with an average damage per shot, at the expense of a smaller magazine. Whilst a sniper rifle is a lethal, one hit kill, weapon that has a bolt-action style reload.
+					</div>
+				</section>
+
+						<section class="spotlight">
+							<iframe width="860" height="480" src="https://www.youtube.com/embed/qphSng_kcJU?si=aByfxKm72ndajxkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div class="content">
+								<h2>Gamemodes</h2>
+								<p>One of the main features of the game, and development focuses, was implementaing various gamemodes. There were explicit considerations for the gameplay throughout the development of these gamemodes, such as in CTF if both flags have been picked up. A flag must be dropped before the other team can collect the flag for a point, this inviting a more agressive and entertaining experience for players.
+								<p>The gamemodes included in the game are:</p>
+									<ul>
+											  <li>Free-For-All</li>
+											  <li>Team Deathmatch</li>
+											  <li>Capture the Flag</li>
+									</ul>
+
+									Each of these gamemodes are available to be selected in the previously mentioned lobby system which includes map/mode voting. Upon starting a game, if in a team-based game, all players will randomly be allocated a team. The teams are distinguished by various features:
+
+									<p>
+									<ul>
+												<li>Custom Logo in Corner of Screen</li>
+												<li>Different Colour Meshes</li>
+												<li>Separation of Teams within in-game leaderboard</li>
+												<li>Respective Team Colours in Killfeed</li>
+									</ul>
+								</p>
+
+								</p>
+							</div>
+						</section>
+
+						<section class="spotlight">
+							<iframe width="860" height="480" src="https://www.youtube.com/embed/q50DJ8QKHQ0?si=GwGC84da-7GsCsez" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div class="content">
+								<h2>Killfeed and Leaderboard</h2>
+								<p>The game includes a killfeed that is broadcasted to all players upon an elimination, along with a leaderboard that allows all players to see how other players are performing. </p>
+								<p>In team-based games, each player will be correctly assigned to their team in the leaderboard, allowing players to see which player belongs to which team. The leaderboard will also contain information such as: kills, deaths, K/D, ping.</p>
+								<p>The text colour of the player's name in the killfeed will differ, depending on what the relation that the player has to you. And the player that has eliminated the other, will always appear on the left side, keeping consistency for the players experience.</p>
+								<p>Killfeed Colour Rules:</p>
+								<ul>
+
+											<li>You - Gold</li>
+											<li>Teammate - Your Teams Colour</li>
+											<li>Enemy (Teams) - Enemy Teams Colour</li>
+											<li>Enemy (FFA) - Red</li>
+								</ul>
+							</div>
+						</section>
+
+						<section class="spotlight">
+						<img src="images/OlakBops/Teams.png" alt="" width="1200" height="600">	<div class="content">
+
+								<h2>Custom Teams</h2>
+								<p>For the team-based gamemodes, I created two custom teams that are the used throughout the game, as faction like teams. By including two teams, it adds a small detail to the game whilst also keeping a consistent feel to the game. The teams are displayed in the game throughout the UI, such as on the leaderboard and team logo, as well as the CTF flags.</p>
+								<p>The two teams that I have created are: </p>
+
+								<p><u><b>Tanzanite</b></u></p>
+								<p>The logo for Tanzanite is taken from the real-world gemstone. Tanzanite is a gemstone that is thought to be 1000 times rarer than diamond, giving it value. This is where the team-members of tanzanite have the upper-hand, as they are the rarest and best of the best fighters for the job. </p>
+
+								<p><u><b>Gunfingerz</b></u></p>
+								<p>The logo for Gunfingerz is taken from the smoking guns that they fire in battle. With Gunfingerz being a blooded team that will stop at nothing to get the job done. The blood scars and deceased eyes of their enemies is embroided onto their logo to strike fear in the heart of their enemies.</p>
+							</div>
+						</section>
+
+
+						<section class="spotlight">
+								<img src="images/OlakBops/WebsiteCamos.png" alt="" width="900" height="500">	<div class="content">
+								<h2>Camos</h2>
+								<p>For my game, I wanted to add some personalisation to the game and I did this through weapon camos. I created the camos myself in Adobe Substance Painter, and this was my first experience using this software. I created the camos by separating the necessary parts of the mesh, and applying custom materials where I wanted areas to be affected. </p>
+								<p>Within the game, camos can be earned and applied by going on killstreaks without dying. This means that players are rewarded for doing well within the game, whilst not giving a competitive advantage and making the game frustrating for other players. </p>
+							</div>
+						</section>
+
+
+					</section>
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/coreymeir/" target = "_blank"class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/CoreyMeir" target = "_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://twitter.com/CoreyMeir" target = "_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Corey Meir 2024</li></a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
